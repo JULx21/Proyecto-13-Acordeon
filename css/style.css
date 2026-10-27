@@ -61,3 +61,84 @@ p {
 .respuesta.activa {
   display: block;
 }
+
+body {
+    min-width: 320px;
+}
+
+.tarjeta {
+    width: 100%;
+    min-width: 280px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-sizing: border-box;
+}
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    .tarjeta {
+        max-width: 800px;
+        padding: 60px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .pregunta {
+        font-size: 18px;
+        padding: 18px;
+    }
+
+    .respuesta {
+        font-size: 16px;
+        padding: 18px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .tarjeta {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 19px;
+    }
+}
+
+/* Celular */
+@media (max-width: 480px) {
+    .tarjeta {
+        padding: 15px;
+        margin: 15px auto;
+        border-radius: 15px;
+    }
+
+    .titulo {
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 17px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .pregunta {
+        padding: 12px;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .respuesta {
+        padding: 12px;
+        font-size: 13px;
+        text-align: left;
+    }
+}
